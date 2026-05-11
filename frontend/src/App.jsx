@@ -6,7 +6,7 @@ function App() {
 
   const fetchDatos = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/datos')
+      const response = await axios.get('https://proyecto-redes-50om.onrender.com/api/datos')
       setDatos(response.data)
     } catch (error) {
       console.error("Error al conectar con la API:", error)
